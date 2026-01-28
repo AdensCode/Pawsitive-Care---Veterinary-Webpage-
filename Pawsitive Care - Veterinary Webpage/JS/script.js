@@ -28,11 +28,8 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
                 alert('Please fill in all required fields (First Name, Last Name, Email)');
                 return;
             }
-            
 
-            while checkboxes ()
-            return; 
-            
+               
             const slelectedServices = [];
             checkboxes.forEach(checkbox => {
                 if (checkbox.checked) {
@@ -52,4 +49,5 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
                     behavior: 'smooth'
                 });
             });
+
         });
