@@ -87,6 +87,24 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+.cta-button2 {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #667eea;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease 0.4s both;
+    text-decoration: none;
+    display: inline-block;
+}
+.cta-button2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -325,4 +343,5 @@ body {
     .form-container {
         padding: 20px;
     }
+
 }
