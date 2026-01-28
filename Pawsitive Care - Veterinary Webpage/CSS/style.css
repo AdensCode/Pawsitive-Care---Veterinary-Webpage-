@@ -345,3 +345,12 @@ body {
     }
 
 }
+.back-to-top-container {
+    text-align: center;
+    font-size: 22px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    letter-spacing: 4px;
+}
