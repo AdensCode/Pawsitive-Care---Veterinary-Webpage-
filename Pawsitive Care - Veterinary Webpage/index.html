@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsitive Care</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/PawsitiveCare_BrandLogo_1024x1024.png" type="image/png">
+
+</head>
+
+
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🐾Pawsitive Care🐾</h1>
+            <p>Your Trusted Partner in Pet Health and Wellness</p>
+            <a href="#contact" class="cta-button">Book an Appointment</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>General Checkups</h3>
+                    <p>comprehensive health examinations to keep your pet in top shape.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💉</div>
+            <h3>Vaccinations</h3>
+            <p>
+                Essential vaccination to protect your pets from common diseases.
+            </p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🔬</div>
+            <h3>Surgery</h3>
+            <p>
+                State-of-the-art surgical procedures performed by experienced veterinarians.
+            </p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">✂️</div>
+            <h3>Grooming</h3>
+            <p>
+                Professional grooming services to keep your pet looking and feeling great.
+            </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" style="color:white;">Contact Us</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>First Name *</label>
+                    <input type="text" id="firstName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Last Name *</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" id="address"> <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label> <br>
+                <textarea id="message" rows="4" placeholder="Tell us about your pet + any concerns">
+                </textarea>
+            </div>
+
+            <div class="services-section">
+                <h3>Select Services & Get Instant Quote</h3>
+                <div class="service-options">
+                    
+<!--Nail Clipping Section-->               
+                    <div class="service-option">
+                    <input type="checkbox" id="dog-nails" data-price="25">
+                    <div class="service-info">
+                        <div class="service-name">🐕 Dog - Nail Clipping</div>
+                    </div>
+
+                    <div class="service-price">$25</div>
+                </div>
+
+                <div class="service-option">
+                    <input type="checkbox" id="cat-nails" data-price="20">
+                    <div class="service-info">
+                        <div class="service-name">🐈 Cat - Nail Clipping</div>
+                    </div>
+                    <div class="service-price">$20</div>
+                </div>
+
+                <div class="service-option">
+                    <input type="checkbox" id="rabbit-nails" data-price="$15">
+                    <div class="service-info">
+                        <div class="service-name">🐰 Rabbit - Nail Clipping</div>
+                    </div>
+                    <div class="service-price">$15</div>
+                </div>
+
+                <div class="service-option">
+                    <input type="checkbox" id="bird-nails" data-price="18">
+                    <div class="service-info">
+                        <div class="service-name">🦜 Bird - Nail Clipping</div>
+                    </div>
+                    <div class="service-price">$18</div>
+                </div>
+
+<!--Full Grooming Section-->
+                <div class="service-option">
+                    <input type="checkbox" id="dog-grooming" data-price="60">
+                    <div class="service-info">
+                        <div class="service-name">🐕 Dog - Full Grooming</div>
+                    </div>
+                    <div class="service-price">$60</div>
+                </div>
+
+                <div class="service-option">
+                    <input type="checkbox" id="cat-grooming" data-price="50">
+                    <div class="service-info">
+                        <div class="service-name">🐈 Cat - Full Grooming</div>
+                    </div>
+                    <div class="service-price">$50</div>
+                </div>
+
+                <div class="service-option">
+                    <input type="checkbox" id="checkup" data-price="75">
+                    <div class="service-info">
+                        <div class="service-name">🏥 General Checkup</div>
+                    </div>
+                    <div class="service-price">$75</div>
+                </div>
+
+                <div class="service-option">
+                    <input type="checkbox" id="vaccination" data-price="45">
+                    <div class="service-info">
+                        <div class="service-name">
+                            <div class="service-name">💉 vaccination</div>
+                    </div> <br>
+                    <div class="service-price">$45</div>
+                </div>
+            </div>
+
+            <div class="total-price">
+                Total Price: $<span id="total-price">0</span>
+            </div>
+        </div>
+
+         <button class="submit" onclick="submitForm()">Send Message & Book Services</button>
+     </div>
+ </div>      
+</section>
+ 
+</body>
+</html>

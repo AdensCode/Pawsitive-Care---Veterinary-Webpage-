@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #6f02c9 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -250px;
+    right: -250px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    bottom: -150px;
+    left: -150px;
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+.cta-button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease 0.4s both;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #667eea;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.contact-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.services-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.services-section h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.service-options {
+    display: grid;
+    gap: 15px;
+}
+
+.service-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-option:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.service-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.service-price {
+    color: #667eea;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.total-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #667eea;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.submit {
+    /* --- Basic Button Shape & Text --- */
+    width: 100%;               /* Spans the full width of the form container */
+    padding: 15px;             /* Vertical and horizontal space inside the button */
+    margin-top: 20px;          /* Pushes the button down away from the checklist */
+    border: none;              /* Removes the default browser button border */
+    border-radius: 8px;        /* Matches the rounded corners of your input fields */
+    color: white;              /* Makes the "Send Message" text white */
+    font-size: 1.2rem;         /* Sets a legible, prominent text size */
+    font-weight: 600;          /* Makes the font semi-bold */
+    cursor: pointer;           /* Shows the 'clickable' hand icon on hover */
+
+    /* --- The Three Background Layers --- */
+    /* Layer 1: First Shimmer (angled at 120deg) 
+       Layer 2: Second Shimmer (angled at 60deg so it leans the opposite way)
+       Layer 3: Your original purple gradient background */
+    background: 
+        linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 70%), 
+        linear-gradient(60deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 70%), 
+        linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* Sets the width for each layer: Shimmers are 200% wide to allow movement; Purple is 100% */
+    background-size: 200% 100%, 200% 100%, 100% 100%;
+    
+    /* Initial placement: Shimmer 1 starts right, Shimmer 2 starts left, Purple is centered */
+    background-position: 100% 0, -100% 0, 0 0;
+
+    /* --- Logic & Animation --- */
+    overflow: hidden;          /* Crops the shimmers so they don't stick out past the corners */
+    position: relative;        /* Establishes a coordinate system for the background layers */
+    
+    /* Runs two separate animations (A and B) simultaneously, every 4 seconds */
+    animation: crossA 4s infinite linear, crossB 4s infinite linear;
+    
+    /* Smoothly transitions the hover effects (like the shadow) over 0.3 seconds */
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for depth */
+.submit:hover {
+    transform: translateY(-3px);              /* Lifts the button slightly when hovered */
+    box-shadow: 0 10px 30px rgba(140, 0, 255, 0.4); /* Adds a soft purple glow underneath */
+}
+
+/* --- Animation A: Moves the First Shimmer from Left to Right --- */
+@keyframes crossA {
+    0% { background-position: 200% 0, -200% 0, 0 0; }   /* Start position for all layers */
+    100% { background-position: -200% 0, -200% 0, 0 0; } /* End: Moves only the first layer */
+}
+
+/* --- Animation B: Moves the Second Shimmer from Right to Left --- */
+@keyframes crossB {
+    0% { background-position: 200% 0, 200% 0, 0 0; }    /* Start position for all layers */
+    100% { background-position: 200% 0, -200% 0, 0 0; }  /* End: Moves only the second layer */
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 20rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
