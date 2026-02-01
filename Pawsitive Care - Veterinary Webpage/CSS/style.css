@@ -348,6 +348,8 @@ body {
 }
 .back-to-top-container {
     text-align: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
     font-size: 22px;
 }
 .footer {
@@ -355,4 +357,5 @@ body {
     color: white;
     letter-spacing: 4px;
 }
+
 
